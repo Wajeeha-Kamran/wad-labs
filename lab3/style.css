@@ -1,9 +1,14 @@
+/*CSS variable declaration*/
 :root
 {
     --colormain:#74330B;
-
+    --textshadowall:5px 5px 10px #c5a780;
+    --boxshadowall :2px 2px 6px 3px var(--colormain);
+    --basicfont : Merriweather, Georgia, "Times New Roman", serif;
 }
 
+
+/*applying on all body */
 body
 {
     background-color: #fff4e7;
@@ -11,16 +16,17 @@ body
     padding: 0;
 }
 
+/*header designing including logo and page name*/
 header
 {
-  display: flex;
-  justify-content:flex-start;
-  text-align: center;
-  gap: 30px;
-  border: 2px solid var(--colormain);
-  box-shadow: 2px 2px 2px 2px var(--colormain);
-  background-color: rgba(188, 128, 59, 0.2);
-  backdrop-filter: blur(30px);
+    display: flex;
+    justify-content:flex-start;
+    text-align: center;
+    gap: 30px;
+    border: 2px solid var(--colormain);
+    box-shadow:var(--boxshadowall);
+    background-color: rgba(188, 128, 59, 0.2);
+    border-radius: 5px;
 }
 header img
 {
@@ -32,117 +38,164 @@ header h1
     font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
     color: var(--colormain);
     font-size: 2em;
-    text-shadow: 5px 5px 10px #c5a780;
+    text-shadow: var(--textshadowall);
     text-decoration: underline;
 }
 
-.content
+
+
+/*content section designing including the time tag*/
+main
 {
-    padding-left: 10px;
+   padding-left: 10px;
+   font-size: 1em;
 }
 
-.content h1
+main h1
 {
     color: var(--colormain);
     font-family: cursive;
     text-decoration:underline;
+    font-size: 2em;
 }
 
-.content h2
+main p
 {
-    color: var(--colormain);
-    font-family: cursive;
-    text-decoration:underline;
+    font-family: var(--basicfont);
+    letter-spacing: 1px;
+    line-height: 1.5em;
 }
-.content p
+
+main img
 {
-    font-family: Merriweather, Georgia, "Times New Roman", serif;
     padding-left: 30px;
-    letter-spacing: 2px;
+    width: auto;
+    height: auto;
+
 }
 
-.content li
+#first::first-letter
 {
-    list-style: none;
-    padding-left: 20px;
-    gap: 10px;
+    font-weight: bolder;
+    font-size:larger;
 }
 
-a:hover
-{
-    color: black;
-}
 
 #books
 {
    display: flex;
    justify-content:center;
    align-items: center;
-   gap:100px;
+   gap:10px;
+   margin-top: 70px;
    
 }
 #books li
 {
-    padding-left: 30px;
+    list-style: none;
+}
+
+#books li p:hover
+{
+    color: black;
 }
 
 #books p
 {
-    padding-left: 5px ;
-    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-left: 30px ;
+    letter-spacing: 1px;
     font-family: cursive;
     color: brown;
     text-decoration:underline;
-}
-.myself
-{
-  background-color: #e6c8ae;
-  border: 2px solid var(--colormain);
-  box-sizing: border-box;
-  width: 500px;
-  height: 600px;
-  padding-left: 10px;
-  margin-top: 80px;
-  margin-left: 400px;
-  box-shadow: 3px 3px 4px 8px var(--colormain) ;
-  border-radius: 7px;
+    text-shadow:var(--textshadowall);
 }
 
-.myself h1
+#books img
 {
- color: var(--colormain);
- font-family: cursive;
- text-decoration:underline;
+    width: 200px;
+    height: 300px;
+    padding-right: 20px;
 }
 
-.myself p
+
+time
 {
-    font-family: Merriweather, Georgia, "Times New Roman", serif;
+    color: gray;
+}
+
+
+/*profile card designing */
+.profilecard
+{
+    background-color: #e6c8ae;
+    border: 2px solid var(--colormain);
+    box-sizing:border-box;
+    width: 700px;
+    height: 500px;
+    padding-left: 10px;
+    margin-top: 80px;
+    margin-left: 300px;
+    box-shadow: var(--boxshadowall) ;
+    border-radius: 7px;
+}
+
+.profilecard h1
+{
+    color: var(--colormain);
+    font-family: cursive;
+    text-decoration:underline;
     padding-left: 10px;
 }
 
-.myself img
+.profilecard p
 {
-    border-radius:10cm;
-    box-shadow: 3px 3px 7px 7px var(--colormain) ;
-    position: relative;
-    margin-left:80px;
+    font-family: var(--basicfont);
+    padding-left: 10px;
 }
 
+.profilecard img
+{
+    border-radius:10cm;
+    box-shadow:var(--boxshadowall);
+    margin-left: 410px;
+    margin-top: -90px;
+    width: 210px ;
+    height: 210px;
+}
+
+
+span[class="texthighlight"]
+{
+   color: var(--colormain);
+   text-decoration:underline;
+   font-weight: bold;
+   text-shadow: var(--textshadowall);
+}
+
+span[class="texttransform"]
+{
+    text-decoration:underline;
+}
+
+span[class="texttransform"]:hover
+{
+    text-transform:uppercase;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/*footer designing */
 .footer
 {
     background-color: var(--colormain);
-    height: 50px;
-    width: 1260px;
+    height: auto;
+    width: auto;
     color: beige;
     text-align: center;
     margin-top: 50px;
     padding-top: 10px;
     padding-left: 20px;
     border: 3px solid var(--colormain);
-}
-
-time
-{
-    text-align: end;
 }
