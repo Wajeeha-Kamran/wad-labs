@@ -1,0 +1,316 @@
+/*CSS variable declaration*/
+:root
+{
+    --colormain:#0D1E47;
+    --textshadowall:5px 2px 20px #bdc2db;
+    --boxshadowall :2px 2px 6px 6px var(--colormain);
+    --fontfamilyall: 'Times New Roman', Times, serif;
+    --bg-col-subheading:rgba(97, 153, 200, 0.5);
+    --txt-dec-all:underline;
+}
+
+/*applying on all body */
+body
+{
+    background-image: url('background2.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+/*header designing including logo and page name*/
+header
+{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 50px;
+    border: 2px solid var(--colormain);
+    box-shadow:var(--boxshadowall);
+    background-color: rgba(103, 123, 138, 0.95);/*0.95 for transparency*/
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: 70px;
+}
+header img
+{
+    padding-top: 15px;
+    width:12em;
+    height:12em;
+}
+
+header h1
+{
+    font-family:var(--fontfamilyall);
+    color: var(--colormain);
+    font-size: 3em;
+    text-shadow: var(--textshadowall);
+    text-decoration: var(--txt-dec-all);
+}
+
+/*styling for table */
+.tablesection h1/*table caption*/
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow:var(--boxshadowall);
+    background-color:var(--bg-col-subheading);
+    border-radius: 5px;
+    width: 20em;
+    height: 70px;
+    margin-left: 150px;
+    margin-bottom: 70px;
+    font-family: var(--fontfamilyall);
+    color: var(--colormain);
+    font-size: 3em;
+    text-shadow: var(--textshadowall);
+    text-decoration: var(--txt-dec-all);
+}
+
+
+.tablesection table
+{
+    border-collapse: collapse;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    border: 2px solid var(--colormain);
+    width: 70em;
+    height:60em;
+    box-shadow: var(--boxshadowall);
+    background-color: #dce5ec;
+}
+
+thead
+{
+    background-color: #112960;
+    height: 70px;
+    text-align: center;
+    border-bottom: 2px solid var(--colormain);
+    border-right: 1px solid var(--colormain);
+}
+
+thead tr
+{
+   font-size: 20px;
+   color: white;
+   text-shadow: var(--textshadowall);
+}
+
+tbody td
+{
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid var(--colormain);
+    border-right: 1px solid var(--colormain);
+    font-family: var(--fontfamilyall);
+}
+
+/*selecting every even child*/
+tbody tr:nth-child(even)
+{
+    background-color:  rgb(177, 208, 235);
+}
+
+tbody tr:hover
+{
+    background-color:#6174a1;
+    color: white;
+}
+
+tfoot td
+{
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid var(--colormain);
+    border-right: 1px solid var(--colormain);
+    height:70px;
+    font-family: var(--fontfamilyall);
+}
+
+
+/*form styling*/
+.formsection h1
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow:var(--boxshadowall);
+    background-color:var(--bg-col-subheading);
+    border-radius: 5px;
+    width: 20em;
+    height: 70px;
+    margin-left: 160px;
+    margin-bottom: 70px;
+    font-family: var(--fontfamilyall);
+    color: var(--colormain);
+    font-size: 3em;
+    text-shadow: var(--textshadowall);
+    text-decoration: var(--txt-dec-all);
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    border:2px solid var(--colormain) ;
+    width: 40em;
+    height: 45em;
+    margin-left: 280px;
+    margin-bottom: 100px;
+    padding: 30px;
+    box-shadow: var(--boxshadowall);
+    background-color: #dce5ec;
+    border-radius: 20px;
+}
+
+fieldset
+{
+    border: 2px solid var(--colormain);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+form legend
+{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+form label
+{
+    display: block;
+    font-weight:bolder;
+    font-size: 20px;
+    color: var(--colormain);
+    padding-bottom: 10px;
+    font-family:var(--fontfamilyall);
+}
+
+form input[type="text"],
+     input[type="number"]
+{
+    margin-bottom: 10px;
+    width: 30em;
+    height: 2em;
+}
+
+form input[type="radio"]
+{
+    margin-bottom: 10px;
+    width: 10em;
+    height: 1em;
+}
+
+form input:focus::placeholder
+{
+    color: white;
+}
+
+form select
+{
+    margin-bottom: 10px;
+    width:30em;
+    height: 2em;
+}
+
+#button
+{
+    width: 10em;
+    height: 3em;
+    font-family: var(--fontfamilyall);
+    background-color: var(--colormain);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: var(--boxshadowall);
+}
+
+#button:hover
+{
+    color:var(--colormain);
+    background-color: white;
+}
+
+/* styling applied on the report*/
+.report h1/*table caption*/
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow:var(--boxshadowall);
+    background-color:var(--bg-col-subheading);
+    border-radius: 5px;
+    width: 20em;
+    height: 70px;
+    margin-left: 150px;
+    margin-bottom: 70px;
+    font-family: var(--fontfamilyall);
+    color: var(--colormain);
+    font-size: 3em;
+    text-shadow: var(--textshadowall);
+    text-decoration: var(--txt-dec-all);
+}
+
+.report h3
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-family: var(--fontfamilyall);
+    color: var(--colormain);
+    font-size: 1.5em;
+    text-shadow: var(--textshadowall);
+    text-decoration: var(--txt-dec-all);
+}
+
+
+.report table
+{
+    border-collapse: collapse;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    border: 2px solid var(--colormain);
+    width: 60em;
+    height:60em;
+    box-shadow: var(--boxshadowall);
+    background-color: #dce5ec;
+}
+
+.report tr 
+{
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid var(--colormain);
+    border-right: 1px solid var(--colormain);
+    font-family: var(--fontfamilyall);
+}
+
+.report th
+{
+    background-color: var(--colormain);
+    color: white;
+}
+
+.report p, ul, li
+{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+
+/*footer designing */
+.footer
+{
+    background-color: var(--colormain);
+    height: auto;
+    width: auto;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border: 3px solid var(--colormain);
+}

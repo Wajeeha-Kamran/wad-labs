@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GradeSheet</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo _image" >
+        <h1>GradeSheet</h1>
+    </header>
+    <section class="tablesection">
+        <h1>Student Information</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Registration Id</th>
+                    <th>Gender</th>
+                    <th>Semester</th>
+                    <th>GPA</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Wajeeha Kamran</td>
+                 <td>04072213029</td>
+                 <td>Female</td>
+                 <td>6th</td>
+                 <td>3.6</td>
+                 <td>3.2</td>
+            </tr>
+            <tr>
+                <td>Naila Habib</td>
+                <td>04072213051</td>
+                <td>Female</td>
+                <td>6th</td>
+                <td>3.8</td>
+                <td>3.4</td>
+            </tr>
+            <tr>
+                <td>Taha Fayyaz</td>
+                <td>04072213028</td>
+                <td>Male</td>
+                <td>6th</td>
+                <td>3.9</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>Muhammad Ibrahim</td>
+                <td>04072210325</td>
+                <td>Male</td>
+                <td>6th</td>
+                <td>3.5</td>
+                <td>3.4</td>
+            </tr>
+            <tr>
+                <td>Muhammad Hammad</td>
+                <td>0407221026</td>
+                <td>Male</td>
+                <td>6th</td>
+                <td>3.2</td>
+                <td>3.3</td>
+            </tr>
+            <tr>
+                <td>Tatheer Zahra</td>
+                <td>04072213044</td>
+                <td>Female</td>
+                <td>6th</td>
+                <td>3.8</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>Sehrish Siddique</td>
+                <td>04072213027</td>
+                <td>Female</td>
+                <td>6th</td>
+                <td>3.3</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>Kalsoom Bahadur</td>
+                <td>04072213017</td>
+                <td>Female</td>
+                <td>6th</td>
+                <td>3.5</td>
+                <td>3.2</td>
+            </tr>
+            <tr>
+                <td>Sumbul Zahra</td>
+                <td>04072213010</td>
+                <td>Female</td>
+                <td>6th</td>
+                <td>3.6</td>
+                <td>3.4</td>
+            </tr>
+            <tr>
+                <td>Malaika Malik</td>
+                <td>04072213018</td>
+                <td>Female</td>
+                <td>6th</td>
+                <td>3.4</td>
+                <td>3.5</td>
+            </tr>
+        </tbody>
+        <tfoot >
+            <tr>
+              <td colspan="4">Average CGPA :</td>
+              <td colspan="2">3.5</td>
+            </tr>
+        </tfoot>
+        </table>
+    </section>
+    <section class="formsection">
+        <h1>Student Form</h1>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" placeholder="Enter Your Name Here " required>
+
+                    <label for="gender"><u>Gender :</u></label>
+                    <label>Male &nbsp&nbsp<input type="radio" id="radiobutton" name="gender" required></input></label>
+                    <label>Female<input type="radio" id="radiobutton" name="gender" required></input></label>
+            </fieldset>
+            <fieldset>
+                <legend>Academic Information</legend>
+                <label for="regno">Registration No:</label>
+                <input type="text" id="regno" placeholder="Enter Registration Id" required>
+
+                <label for="semester">Semester:</label>
+                <select id="semester" required>
+                    <option>Choose Semester</option>
+                    <option>1st</option>
+                    <option>2nd</option>
+                    <option>3rd</option>
+                    <option>4th</option>
+                    <option>5th</option>
+                    <option>6th</option>
+                    <option>7th</option>
+                    <option>8th</option>
+                </select>
+                    
+                <label for="gpa">GPA :</label>
+                <input type="number" id="gpa" min="0" max="4"  step="0.1" placeholder="Enter Current Semester GPA" required>
+
+                <label for="cgpa">CGPA :</label>
+                <input type="number" id="cgpa" min="0" max="4"  step="0.1" placeholder="Enter Overall CGPA" required>
+            </fieldset>
+           <br>
+           <input type="submit" value="Submit Form" id="button">
+        </form>
+    </section>
+    <section class="report">
+            <h1><u>Report</u></h1>
+             <h3><u>Tags and Styles Used</u></h3>
+             <table>
+             <tr>
+                 <th>HTML TAGS</th>
+                 <th>DESCRIPTION</th>
+             </tr>
+             <tr>
+                 <td>Section tags</td>
+                 <td>To create Specific sections for each content. </td>
+             </tr>
+             <tr>
+                 <td>table , td , tr , th</td>
+                 <td>To create tables ,its row and inserting data into them.</td>
+             </tr>
+             <tr>
+                 <td>thead tbody tfoot</td>
+                 <td>To sepearate the contents of table based on the type of data .</td>
+             </tr>
+             <tr>
+                 <td>Heading & paragraph tags </td>
+                 <td>To incorporate Text on the page</td>
+             </tr>
+             <tr>
+                 <td>Form tag</td>
+                 <td>To create form for user input.</td>
+             </tr>
+             <tr>
+                 <td>Fieldset tags</td>
+                 <td>To incorporate specific sections in the form .</td>
+             </tr>
+             <tr>
+                 <td>Legends</td>
+                 <td>To give name to those specific sections.</td>
+             </tr>
+             <tr>
+                <td>Label and Input tags</td>
+                <td>To label and get input from the user in those tags.</td>
+            </tr>
+             <tr>
+                 <th>CSS STYLES</th>
+                 <th>DESCRIPTION</th>
+             </tr>
+             <tr>
+                 <td>Background Color</td>
+                 <td>To give background Colour </td>
+             </tr>
+             <tr>
+                 <td>Text Alignment</td>
+                 <td>To align the text in a specific position.</td>
+             </tr>
+             <tr>
+                 <td>Color </td>
+                 <td>To add color to text.</td>
+             </tr>
+             <tr>
+                 <td>Margin and Padding </td>
+                 <td>To add space between each section and contents within that section.</td>
+             </tr>
+             <tr>
+                 <td> Hover </td>
+                 <td>To add effects on hovering the content.</td>
+             </tr>
+             <tr>
+                 <td>Height and Width </td>
+                 <td>To adjust size of content .</td>
+             </tr>
+             <tr>
+                 <td>Image Radius </td>
+                 <td>To make the image border round .</td>
+             </tr>
+             <tr>
+                <td>Box And Text shadows</td>
+                <td>To apply shadows to boxes and text content.</td>
+            </tr>
+            <tr>
+                <td>CSS Variables </td>
+                <td>To avoid use of repetative code.</td>
+            </tr>
+         </table>
+             <h3><U>What I learned from This Lab Task</U></h3>
+             <p>Following are the key factors i learned from this Lab Task :</p>
+             <ul>
+                 <li>How to incorporate various section of page based on the content.</li>
+                 <li>How to add tables and forms  on the page and how to make them userfrindly.</li>
+                 <li>How to adjust the orientation of various items within a class or id. using various selectors .</li>
+             </ul>
+    </section>
+    <div class="footer">
+        <p>Copyright © [13/03/2025]. Developed by Wajeeha Kamran. All rights reserved.</p>
+    </div>
+</body>
+</html>
