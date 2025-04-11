@@ -1,0 +1,324 @@
+/*CSS variable declaration*/
+:root
+{
+    --colormain:#74330B;
+    --textshadowall:5px 5px 10px #c5a780;
+    --boxshadowall :2px 2px 6px 3px var(--colormain);
+    --basicfont : Merriweather, Georgia, "Times New Roman", serif;
+}
+
+/*applying on all body */
+body
+{
+    background-color: #fff4e7;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    grid-auto-rows: auto;
+}
+
+/*header designing including logo and page name*/
+header
+{
+    display: flex;
+    justify-content:flex-start;
+    text-align: center;
+    gap: 30px;
+    border: 2px solid beige;
+    box-shadow:var(--boxshadowall);
+    background-color: var(--colormain);
+    border-radius: 5px;
+}
+header img
+{
+    padding-top: 10px;
+}
+
+header h1
+{
+    font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+    color: beige;
+    font-size: 2em;
+    text-shadow: var(--textshadowall);
+    text-decoration: underline;
+}
+
+
+
+/*content section designing including the time tag*/
+main
+{
+   padding-left: 5px;
+   font-size: .8em;
+}
+
+main h1
+{
+    color: var(--colormain);
+    font-family: cursive;
+    text-decoration:underline;
+    font-size: 2em;
+}
+
+main p
+{
+    font-family: var(--basicfont);
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+main img
+{
+    width: 390px;
+}
+
+#first::first-letter
+{
+    font-weight: bolder;
+    font-size:larger;
+}
+
+
+#books
+{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   gap:10px;
+   margin-top: 70px;
+   
+}
+#books img
+{
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+#books img:hover
+{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 12px 8px var(--colormain);
+}
+
+#books figcaption
+{
+    font-family: cursive;
+    color: brown;
+    text-decoration:underline;
+    text-shadow:var(--textshadowall);
+    margin-left: 30px;
+}
+
+time
+{
+    color: gray;
+}
+
+/*profile card designing */
+.profilecard
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #e6c8ae;
+    border: 2px solid var(--colormain);
+    box-sizing:border-box;
+    width: 330px;
+    height:700px;
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-top: 80px;
+    box-shadow: var(--boxshadowall) ;
+    border-radius: 7px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.profilecard:hover
+{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 12px 10px var(--colormain);
+}
+
+.profilecard h1
+{
+    color: var(--colormain);
+    font-family: cursive;
+    text-decoration:underline;
+    padding-left: 10px;
+}
+
+.profilecard p
+{
+    font-family: var(--basicfont);
+    padding-left: 10px;
+}
+
+.profilecard img
+{
+    border-radius:10cm;
+    box-shadow:var(--boxshadowall);
+    margin-left: 35px;
+    width: 210px ;
+    height: 210px;
+    position: absolute;
+    top: 470px;
+}
+
+
+span[class="texthighlight"]
+{
+   color: var(--colormain);
+   text-decoration:underline;
+   font-weight: bold;
+   text-shadow: var(--textshadowall);
+}
+
+span[class="texttransform"]
+{
+    text-decoration:underline;
+}
+
+span[class="texttransform"]:hover
+{
+    text-transform:uppercase;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/*footer designing */
+.footer
+{
+    background-color: var(--colormain);
+    height: auto;
+    width: auto;
+    color: beige;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border: 3px solid var(--colormain);
+}
+
+
+/*for mobile phones*/
+@media (max-width:400px)
+{
+    .container
+    {
+        grid-template-columns: 1fr;
+    }
+   header , main
+   {
+     grid-column: 1/-1;
+   }
+   .profilecard , .footer
+   {
+    grid-column: 1/-1;
+   }
+}
+
+/*for tabs */
+@media (min-width:401px) and (max-width:800px)
+{
+    .container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+   header , main
+   {
+     grid-column: 1/-1;
+   }
+   main 
+   {
+    padding-left: 10px;
+    font-size: 1em;
+   }
+   main img
+   {
+    width: 650px;
+    padding-left: 30px;
+   }
+   #books 
+   {
+    grid-column: 1/-1;
+   }
+   #books img
+   {
+    width: 200px;
+    padding-left:10px ;
+    margin-right: 20px;
+   }
+   .profilecard 
+   {
+    grid-column: 1/-1;
+    width: 630px;
+    height:500px;
+   }
+   .profilecard img
+   {
+    margin-left: 355px;
+    top: 250px;
+   }
+
+   .footer
+   {
+    grid-column: 1/-1;
+   }
+}
+
+/*for laptops */
+@media (min-width:801px)
+{
+    .container
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+   header , main
+   {
+     grid-column: 1/-1;
+   }
+   main 
+   {
+    padding-left: 10px;
+    font-size: 1em;
+   }
+   main img
+   {
+    width: 1050px;
+    padding-left: 90px;
+   }
+   #books 
+   {
+    grid-column: 2/3;
+    display:flex;
+    flex-direction: row;
+   }
+   #books img
+   {
+    width: 200px;
+    padding-left:10px ;
+    margin-right: 20px;
+   }
+   .profilecard 
+   {
+    grid-column: 2/-1;
+    width: 630px;
+    height:500px;
+   }
+   .profilecard img
+   {
+    margin-left: 355px;
+    top: 250px;
+   }
+   .footer
+   {
+    grid-column: 1/-1;
+   }
+}
+
