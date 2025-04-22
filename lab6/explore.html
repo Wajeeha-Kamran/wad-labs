@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-rose-100">
+    <!--for flexbox exploring-->
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline">FlexBox Exploring</h1>
+    <div class=" min-h-[500px] flex flex-row justify-center items-center gap-20 ">
+        <div class="bg-slate-400 w-[200px] h-[200px] text-center pt-20">A</div>
+        <div class="bg-red-500 w-[200px] h-[200px] text-center pt-20">B</div>
+        <div class="bg-lime-500 w-[200px] h-[200px] text-center pt-20 ">C</div>
+    </div>
+
+    <hr class="h-5">
+    <!--for grid exploring-->
+    <h1 class="font-mono text-6xl text-center pt-15  text-orange-900 underline">GridBox Exploring</h1>
+    <div class=" min-h-[600px] grid grid-cols-3 gap-4 gap-y-4 pt-30 justify-items-center bor">
+        <div class="bg-slate-400 w-[200px] h-[200px] text-center pt-20">A</div>
+        <div class="bg-red-500 w-[200px] h-[200px] text-center pt-20">B</div>
+        <div class="bg-lime-500 w-[200px] h-[200px] text-center pt-20">C</div>
+        <div class="bg-orange-500 w-[200px] h-[200px] text-center pt-20">D</div>
+        <div class="bg-cyan-500 w-[200px] h-[200px] text-center pt-20">E</div>
+        <div class="bg-pink-500 w-[200px] h-[200px] text-center pt-20">F</div>
+    </div>
+
+    <hr class="h-5">
+
+    <!--for Text styling exploring-->
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline">Text Styling Exploring</h1>
+    <div class=" min-h-[300px]">
+        <p class="font-sans text-lime-700 text-xl font-semibold m-10 p-20 text-center italic leading-relaxed">Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Omnis veniam odio, animi tempore minus doloremque
+            rerum sunt fuga. Voluptatibus quaerat commodi in nisi nemo provident maxime facilis officiis laborum soluta.
+        </p>
+    </div>
+
+    <hr class="h-5">
+
+    <!--for designing a box-->
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline">Box Designing</h1>
+    <div
+        class=" relative min-h-[500px] my-20 bg-[url(https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png)] bg-no-repeat bg-contain bg-center">
+        <div class="text-center text-white pt-50">
+            <h1 class="font-mono text-6xl font-bold mb-4">Practice TailwindCSS!</h1>
+            <p class="text-xl mb-6">This lab will lead you to better understand and grasp the knowledge of TailwindCSS.
+            </p>
+        </div>
+    </div>
+
+    <hr class="h-5">
+
+    <!--for styling a table-->
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline">Styling Table</h1>
+    <div>
+        <table class="w-[700px] mt-8 ml-[300px] mb-[70px] text-left border border-gray-600">
+            <thead class="bg-lime-600 text-2xl text-white">
+                <th class="pr-10 border p-3 ">Name</th>
+                <th class="pr-10 border p-3">Age</th>
+                <th class="pr-10 border p-3">Semester</th>
+            </thead>
+            <tbody>
+                <tr class="text-left">
+                    <td class="pr-20 border border-gray-900 p-3">Wajeeha</td>
+                    <td class="pr-20 border border-gray-900 p-3">22</td>
+                    <td class="pr-20 border border-gray-900 p-3">6th</td>
+                </tr>
+                <tr>
+                    <td class="pr-20 border border-gray-900 p-3">Naila</td>
+                    <td class="pr-20 border border-gray-900 p-3">21</td>
+                    <td class="pr-20 border border-gray-900 p-3">6th</td>
+                </tr>
+                <tr>
+                    <td class="pr-20 border border-gray-900 p-3">Noor</td>
+                    <td class="pr-20 border border-gray-900 p-3">21</td>
+                    <td class="pr-20 border border-gray-900 p-3">6th</td>
+                </tr>
+                <tr>
+                    <td class="pr-20 border border-gray-900 p-3">Ibrahim</td>
+                    <td class="pr-20 border border-gray-900 p-3">22</td>
+                    <td class="pr-20 border border-gray-900 p-3">6th</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="pr-20 border border-gray-900 p-3 ">Total Students</td>
+                    <td class="pr-20 border border-gray-900 p-3 ">4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <hr class="h-5">
+
+    <!--for styling a table-->
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline">Hover Effect</h1>
+    <div class="flex justify-center items-center p-20">
+        <button class="bg-lime-500 text-white p-3 rounded-lg font-semibold hover:bg-white hover:text-lime-500">Hover
+            Over Me</button>
+    </div>
+
+    <hr class="h-5">
+
+    <!--for styling a table-->
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline">Custom Values</h1>
+    <div class="min-h-[300px] flex flex-row justify-center items-center gap-20 w-[300px] m-30 ml-[500px] p-20  bg-lime-500 rounded-lg">
+       <h1 class="text-white font-semibold underline italic">This is a box with custom width!</h1>
+    </div>
+     
+    <hr class="h-5">
+
+    <!--for styling a table-->
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline">Combining Multiple Styles</h1>
+
+    <div class="min-h-[300px] flex flex-row justify-center items-center gap-20 w-[300px] m-30 ml-[500px] p-20  bg-slate-400 text-red-600 rounded-lg hover:bg-slate-700 hover:text-lime-500">
+       <h1 class=" font-semibold underline italic">This is a box containg multiple styles combined!</h1>
+    </div>
+
+    <hr class="h-5">
+    <h1 class="font-mono text-6xl text-center pt-20 text-orange-900 underline mb-[30px]">The End</h1>
+</body>
+
+</html>
